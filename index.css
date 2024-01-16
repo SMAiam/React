@@ -1,3 +1,65 @@
-#heading {
-  color: red;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* .headerContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  padding: 10px;
 }
+
+.logoContainer > img {
+  width: 30%;
+}
+.borderContainer {
+  padding: 10px;
+  margin: 10px;
+}
+.searchContainer > input {
+  display: flex;
+}
+.menuContainer > ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 24px;
+}
+.menuContainer > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+
+.foodContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.imageContainer > img {
+  width: 200px;
+  height: 200px;
+}
+
+.cardContainer {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin: 10px;
+}
+
+.cardContainer:hover {
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.boxContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box {
+  width: 200px;
+  height: 400px;
+  background-color: #f0f0f0;
+}
+.userContainer {
+  padding: 10px;
+  border: 2px solid black;
+} */
