@@ -1,4 +1,5 @@
 import React, { Suspense, lazy } from 'react'
+import { useState } from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom'
 import Header from './src/components/Header'
@@ -6,7 +7,9 @@ import Body from './src/components/Body'
 import Error from './src/components/Error'
 import About from './src/components/About'
 import Restaurant from './src/components/Restaurant'
-
+import UserContext from './src/utils/UserContext'
+import { Provider } from 'react-redux'
+import AppStore from './src/utils/AppStore'
 // import Grocery from './src/components/Grocery'
 
 const Grocery = lazy(() => import('./src/components/Grocery'))
@@ -54,10 +57,15 @@ const Grocery = lazy(() => import('./src/components/Grocery'))
 // --------------------------------------------------------------
 
 const Layout = () => {
+  const [user, setUser] = useState()
   return (
     <div className="layoutContainer">
-      <Header />
-      <Outlet />
+      <Provider store={AppStore}>
+        <UserContext.Provider value={{ loggedInUser: user, setUser }}>
+          <Header />
+          <Outlet />
+        </UserContext.Provider>
+      </Provider>
     </div>
   )
 }

@@ -1,7 +1,7 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
-/* .headerContainer {
+@tailwind utilities; */
+.headerContainer {
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
@@ -62,4 +62,22 @@
 .userContainer {
   padding: 10px;
   border: 2px solid black;
+}
+.promoted {
+  position: absolute;
+  background-color: black;
+  color: azure;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 0 0 10px 0;
+}
+
+.restaurantContainer {
+  text-align: center;
+}
+.cordionHeader {
+  display: inline-flexbox;
+}
+/* .restaurantHeader {
+  display: inline-block;
 } */

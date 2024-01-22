@@ -13,7 +13,7 @@ const useRestaurantData = (id) => {
   const fetchData = async () => {
     const data = await fetch(RESTAURANT_API + id)
     const json = await data.json()
-    setDetails(json?.data?.cards[0]?.card?.card?.info)
+    setDetails(json?.data)
   }
   return details
 }

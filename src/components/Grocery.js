@@ -1,9 +1,5 @@
 const Grocery = () => {
   console.log('helllllooo')
-  return (
-    <div>
-      <h1>NO GROCERY IS AVAILBLE!!!</h1>
-    </div>
-  )
+  return <h1 className="text-emerald-700 font-bold underline">Hello world!</h1>
 }
 export default Grocery
